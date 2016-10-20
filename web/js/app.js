@@ -13,6 +13,7 @@ App.controller('home', function(page) {
       $(page).find('.placeholder .text').text('Please enter the user login name you are looking to search for...');
     } else {
       $(page).find('.placeholder').hide();
+      $('.footer').hide();
       $('.loader').show();
       var url = "https://api.github.com/users/"+input.value
       $.ajax({
@@ -46,8 +47,10 @@ App.controller('home', function(page) {
             $details.find('.is-admin').text(admin_status);
             $container.append($details);
             $('.loader').hide();
+            $('.footer').show();
           } else {
             $('.loader').hide();
+            $('.footer').show();
             $(page).find('.placeholder').show();
             $(page).find('.placeholder .text').text('Sorry! couldn\'t find the result matching username "'+input.value+'"');
           }
