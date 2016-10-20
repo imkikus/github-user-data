@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Github User Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+ 
+  <body>
+    <div class="app-page" data-page="home">
+      <div class="app-topbar custom-topbar">
+        <div class="app-title">Github User Data</div>
+      </div>
+      <div class="app-content">
+        <form action="">  
+          <input type="search" class="app-input" placeholder="Enter the github username">
+        </form>
+
+        <div class="app-section results">
+          <div class="user-details">
+            <div class="image text-center">
+              <img class="user-image">
+            </div>
+            <h2 class="text-center">Details</h2>
+            <hr>
+            <div>
+              <div><strong>Name</strong></div>
+              <div class="name"></div>
+            </div>
+            <hr>
+            <div>
+              <div><strong>Login Name</strong></div>
+              <div class="login"></div>
+            </div>
+            <hr>
+            <div>
+              <div><strong>Bio</strong></div>
+              <div class="bio"></div>
+            </div>
+            <hr>
+            <div>
+              <div><strong>Email Id</strong></div>
+              <div class="email"></div>
+            </div>
+            <hr>
+            <div>
+              <div><strong>Company</strong></div>
+              <div class="company"></div>
+            </div>
+            <hr>
+            <div>
+              <div><strong>Followers</strong></div>
+              <div class="followers"></div>
+            </div>
+            <hr>
+            <div>
+              <div><strong>Following</strong></div>
+              <div class="following"></div>
+            </div>
+            <hr>
+            <div>
+              <div><strong>Public Gists</strong></div>
+              <div class="public-gists"></div>
+            </div>
+            <hr>
+            <div>
+              <div><strong>Public Repos</strong></div>
+              <div class="public-repos"></div>
+            </div>
+            <hr>
+            <div>
+              <div><strong>Admin</strong></div>
+              <div class="is-admin"></div>
+            </div>
+          </div>
+        </div>
+        <div class="loader text-center"><i class="fa fa-cog fa-spin 2x custom-spinner"></i></div>
+        <div class="placeholder active search">
+          <span></span>
+          <div class="text">Search for github user</div>
+        </div>
+      </div>
+    </div>
+    <script src="js/zepto.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

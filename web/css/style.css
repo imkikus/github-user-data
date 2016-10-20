@@ -1,0 +1,47 @@
+.custom-topbar {
+  background-color: #006951;
+}
+.custom-spinner {
+  color: #006951;
+  font-size: 3em;
+}
+.text-center {
+  text-align: center;
+}
+.loader {
+  margin-top: 50%;
+  display: none;
+}
+.user-image {
+  width: 75%;
+  border-radius: 10px;
+}
+/* Search text and icon */
+.placeholder {
+  display: none;
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  color: #999;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -55px;
+}
+.placeholder.active {
+  display: block;
+}
+.placeholder span {
+  display: block;
+  margin: 0 auto 16px;
+  height: 65px;
+  width: 65px;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.placeholder.search span {
+  background-image: url('/images/search.png');
+}
