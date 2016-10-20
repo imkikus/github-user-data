@@ -7,6 +7,7 @@ App.controller('home', function(page) {
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    input.blur();
     if(typeof input.value === 'undefined' || input.value === '') {
       $container.hide();
       $(page).find('.placeholder').show();
