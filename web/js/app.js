@@ -60,7 +60,7 @@ App.controller('home', function(page) {
           App.dialog({
             title: 'Oops!',
             text: 'Action ended in error',
-            okbutton: 'OK'
+            okButton: 'OK'
           })
         }
       });
