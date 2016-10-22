@@ -4,7 +4,7 @@
   "description": "Fetch the details of the github user",
   "main": "index.js",
   "scripts": {
-    "start": "zerver --port=5001 web"
+    "start": "zerver web"
   },
   "author": "",
   "license": "ISC",
